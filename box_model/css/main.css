@@ -1,0 +1,46 @@
+#main{
+    background-color: aquamarine;
+    padding:  50px;
+    margin:  20px;
+}
+
+#content  {
+    border: 5px solid royalblue;
+    background-color:aqua;
+    color:darkblue;
+    margin: 25px 0;
+    padding:  25px  45px  25px 15px;
+}
+
+#content div{
+        margin-bottom: 12px;
+}
+
+#content #quote {
+        margin: 25px 0  25px  45px;
+}
+
+#content #quote div  {
+    margin-bottom: 5px;
+}
+
+#content  #quote_citation {
+        margin-left: 25px;
+}
+#top_heading{
+    background-color: aqua;
+    color:darkblue;
+    margin: 25px 0;
+    padding:  25px  45px  25px  15px;
+
+}
+#last_heading{
+    margin-left: 50px;
+}
+#footer{
+    background-color: #520707;
+    color:white
+}
+#intro{
+    margin-left: 5px;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+    *{
+        margin: 0;
+        padding: 0;
+     box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Gasoek One', sans-serif;
+        font: 400px;
+    }
+
+    header,footer {
+        background-color:bisque
+    }
+
+     header nav {
+        padding: 0 50px 25px 50px;
+        border-bottom: 1px solid blue ;
+     }
+
+    header nav a {
+       margin-right: 30px; 
+       color:blue;
+       transition: color 0.3s
+       ease-in-out
+    } 
+
+    header nav a:last-of-type {
+        margin-right: 0;
+    }
+
+    header nav a:hover {
+        color: blueviolet;
+    }
+
+    main {
+        background-color:azure;
+        padding: 25px;
+    }
+
+    main h2 {
+        color:blueviolet;
+        margin-bottom: 25px;
+    }
+
+    section.card {
+        background-color:aliceblue;
+        letter-spacing: 2.5px;
+    }
+
+    section.card hr {
+        border: none;
+    }

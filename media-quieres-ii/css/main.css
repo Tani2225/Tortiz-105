@@ -1,0 +1,54 @@
+header {
+    background-color: aquamarine;
+    padding: 12px 48px;
+}
+#smallScreen, #mediumScreen,
+#largesScreen {
+    padding: 48px;
+}
+footer {
+    background-color: blueviolet;
+    padding: 12px 48px;
+}
+@media screen and (min-width:
+800px) {
+    header {
+        font-size: 36px;
+    }
+    #largeScreen,#smallsrceen {
+        background-color: cornflowerblue;
+        color: black;}
+        #mediumScreen, #smallScreen {
+            background-color: beige;
+            color: aqua;
+        }
+}
+@media screen and (min-width: 480px) and (max-width: 799px) {
+    header {
+        font-size: 24px;
+    }
+    #mediumScreen {
+        background-color: darkmagenta;
+        color: black;
+    }
+    #largeScreen, #smallScreen {
+        background-color: darkgrey;
+        color: black ;
+    }
+}
+@media screen and (max-width: 479px) {
+    header {
+        font-size: 16px;
+    }
+    #smallScreen {
+        background-color: blueviolet;
+        color: black;
+    }
+    #mediumScreen , #largeScreen {
+        background-color: cyan;
+        color:black;
+    }
+    footer {
+        display: none;
+    }
+ }

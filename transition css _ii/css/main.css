@@ -1,0 +1,36 @@
+body {
+    text-align: center ;
+}
+
+#text_with_transition {
+transition-property: color;
+transition-duration: 0.5s;
+transition-delay: 0.5s;
+}
+#text_with_transition:hover {
+    color:maroon
+}
+#box {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: mediumslateblue;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    transition: 
+    background-color 2s,
+    border-radius 2s;
+}
+#box:hover {
+    background-color:darkslateblue;
+    border-radius: 50%;
+}
+img {
+    width: 200px;
+    transition: transition 1s;
+}
+img:hover {
+    transform: scale(3) rotate(360deg)
+}

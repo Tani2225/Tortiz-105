@@ -46,7 +46,7 @@ ul li a {
     flex-flow: column wrap;
     width: 100%;
     left: 0;
-    top: 75;
+    top: 75%;
     opacity: 0;
     visibility: hidden;
     transition:

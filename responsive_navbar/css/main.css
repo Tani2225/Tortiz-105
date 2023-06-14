@@ -3,34 +3,34 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 #logo p {
-    font-family: 'Lilita One',sans-serif;
+    font-family: 'Delicious Handdrawn',sans-serif;
 }
 p {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #logo a {
-    width: 1rem;
+    width: 2rem;
 }
 
 header {
-    background-color: beige;
+    background-color:beige;
     padding: 25px;
 }
 
 header nav {
-    display:flex;
+    display: flex;
     padding: .50rem 0;
     width: 75vw;
     margin: 0 auto;
 }
 
 header nav #logo {
-    display:flex;
-    align-items: center;
+    display:inline;
+    align-items:center;
     color:black;
     text-decoration: none;
     font-size: 1rem;
@@ -38,25 +38,27 @@ header nav #logo {
 }
 
 header nav #logo svg {
-    width: 1.276rem;
+    width: 1.275rem;
     fill:cornflowerblue;
     margin-right: .5rem;
     order: 1;
-    transition: all .5s ;
+    transition: all .5s;
 }
 
 header nav #logo p {
     order: 2;
+    padding: .5rem;
 }
 header nav #logo:hover svg {
-    fill:salmon;
+    fill: salmon;
 }
 
 header #mainnav {
-    display: flex;
+    display:contents;
     list-style-type: none;
     align-items: center;
 }
+
 header #mainnav li {
     margin-right: 0;
 }
@@ -64,42 +66,79 @@ header #mainnav li {
 header #mainnav li:last-of-type {
     margin-right: 0;
 }
+
 header #mainnav li a {
     color:black;
     text-decoration: none;
     transition: all .5s;
 }
+
 header #mainnav li a:hover {
-    color:mediumpurple;
-    text-decoration: overline;
+    color:mediumslateblue;
+    text-decoration:underline;
 }
 
 header #mainnav .drop {
-    position: fixed;
+    position: relative;
+}
+
+#home {
+    margin-left: auto;
+    padding: .50rem 0;
+}
+.about {
+    margin-left: auto;
+    padding: .50rem 0;
+}
+
+.contact {
+    margin-left: auto;
+    padding: .50rem 0;
+}
+
+.shopping {
+    margin-left: auto;
+    padding: .50rem 0;
+}
+
+.dropdown_menu {
+    margin-left: auto;
+    padding: .50rem 0;
 }
 .drop ul {
     position: fixed;
-    z-index: -3;
+    z-index: -1s;
     top: 0;
     left: 0;
     list-style-type: none;
-    background-color: cornflowerblue;
+    background-color: lightseagreen;
     padding: .5rem 1.25rem;
     visibility: hidden;
-    transition: 
-    top  .5s
+    transition:
+    top .5s,
     opacity .5s,
     visibility .5s;
 }
-.drop hover ul {
+
+.drop:hover ul {
     top: calc (100% + .50rem);
     opacity: 2;
-    visibility: visible;
-}
-.drop ul li {
-    margin: 0 0 .3rem 0;
+    visibility: visiblie;
 }
 
-.drop ul li :last-of-type {
-    margin-block-end: 0;
+.drop ul li {
+    margin: 0 0 .5rem 0;
+}
+
+.drop ul li:last-of-type {
+    margin-right: 0;
+}
+
+.drop_container a {
+    margin-right: 0;
+}
+.drop_container a ul {
+    color: black;
+    text-decoration: none;
+    transition: all .5s;
 }

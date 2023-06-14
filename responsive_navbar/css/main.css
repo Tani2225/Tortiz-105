@@ -1,48 +1,46 @@
-#div_1 {
-    border: 5px solid purple;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@700&family=Ubuntu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo p {
+    font-family: 'Lilita One',sans-serif;
+}
+p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-#div_1:hover {
-    background-color: skyblue;
+#logo a {
+    width: 1rem;
 }
 
-#div_2 {
-    border: 10px dashed forestgreen;
-    padding: 24px;
-    /* padding affects the space INSIDE the border */
+header {
+    background-color: beige;
+    padding: 25px;
 }
 
-#div_3 {
-    border: 24px dotted crimson;
-    padding: 36px;
-    margin: 60px;
-    /* margin affects the space outside of the border */
+header nav {
+    display:flex;
+    padding; .50rem 0;
+    width: 75vw;
+    margin: 0 auto;
 }
 
-#div_4 {
-    border: 2px solid blue;
-    padding: 8px;
-    margin: 24px;
-    /* margin can overlap, but padding cannot */
+header nav #logo {
+    display:flex;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 3s;
 }
 
-#div_5 {
-    /* you can also use hexadecimal colors */
-    background-color: #222222;
-    color: white;
-}
-
-#div_6 {
-    border: 5px solid orange;
-    /* you can target top, left, bottom, and right sides for margin and padding */
-    padding-left: 48px;
-    /*providing two values will set teh top/bottom first, and left/right second */
-    margin: 50px 12px;
-}
-
-#div_7 {
-    border: 2px solid green;
-    padding: 20px 50px 40px 30px;
-    margin: 20px 50px 40px 30px;
-    /* You may also provide 4 values to margin and padding, the values are in this order: top, right, bottom, left */
+header nav #logo  a {
+    width: 1.276rem;
+    fill: coral;
+    margin-right: 0.4rem;
+    order: 1;
+    transition: ;
 }

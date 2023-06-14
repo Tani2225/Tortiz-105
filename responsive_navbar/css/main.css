@@ -23,7 +23,7 @@ header {
 
 header nav {
     display:flex;
-    padding; .50rem 0;
+    padding: .50rem 0;
     width: 75vw;
     margin: 0 auto;
 }
@@ -42,5 +42,5 @@ header nav #logo  a {
     fill: coral;
     margin-right: 0.4rem;
     order: 1;
-    transition: ;
+    transition: all .4s ;
 }

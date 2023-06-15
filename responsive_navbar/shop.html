@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, 
+        intial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title> shop Responsive Nav Bar Part I</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <nav>
+            <a href="index.html" id="logo">
+                <p>Lilies Cupcakes</p>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" id="cupcake"><path d="M17 18.2c.5-.4 1-.8 1.7-1.1L18 16l-1 2.2zm-1.1-5.7-1 2.1.4.7 1-2.2zM14.5 11c-.2 0-.3 0-.5.1s-.4.3-.5.6c-.1.3 0 .5.1.8l.6 1.1 1.1-2.1c-.2-.3-.5-.5-.8-.5zm17.8 17.3c-.1.1-.3.1-.4.2-.7.3-1.5.2-2.1-.1l-1.2-.7c-.7-.4-1.5-.4-2.2 0l-1.2.7c-.6.4-1.4.4-2 .2-.2-.1-.3-.1-.5-.2l-.9-.5c-.8-.4-1.7-.4-2.4.2-.1.1-.3.2-.4.3-.3.2-.6.3-1 .3-.5 0-1-.1-1.4-.3l-.5-.3 2.7 7.4c.4 1 1.3 1.6 2.3 1.6h6.8c1 0 2-.7 2.3-1.6l2.7-7.4-.4.2h-.2zM21.4 35h-.2c-.2 0-.4-.1-.5-.3l-1.7-5c-.1-.3 0-.5.3-.6.3-.1.5 0 .6.3l1.7 5c.2.2.1.5-.2.6zm3.6-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5v-4c0-.3.2-.5.5-.5s.5.2.5.5v4zm5-4.8-1.7 5c-.1.2-.3.3-.5.3h-.2c-.3-.1-.4-.4-.3-.6l1.7-5c.1-.3.4-.4.6-.3.3 0 .5.3.4.6zM17.4 15l-.5-.8-1 2.1.4.9z"></path><path d="M24 0C10.8 0 0 10.8 0 24c0 13.3 10.8 24 24 24 13.3 0 24-10.8 24-24S37.2 0 24 0zm10.8 26.8-.1.1-.3.2-3.1 8.6c-.5 1.4-1.8 2.3-3.3 2.3h-6.8c-1.5 0-2.8-.9-3.3-2.3l-3.1-8.6-.5-.3c-.5-.6-.7-1.2-.7-1.8 0-1.1.8-2.2 2.2-3-.1-.3-.2-.7-.2-1 0-.7.3-1.4.7-2l-3.5-6c-.3-.5-.3-1-.2-1.5.1-.5.5-.9.9-1.2 1-.6 2.2-.2 2.7.7l2.1 3.7c.9-1.6 3.3-2.7 6.1-2.7 3.6 0 6.5 1.8 6.5 4 0 .4-.1.9-.4 1.3 1.8.9 2.9 2.2 2.9 3.7 0 .3-.1.7-.2 1 1.4.8 2.2 1.9 2.2 3 .1.6-.1 1.2-.6 1.8z"></path><path d="M18.2 18.6c-.4.3-.7.5-1 .8-.4.5-.7 1-.7 1.6 0 .2 0 .3.1.5h.1c.1 0 .2-.1.3-.1.2-.1.3-.1.5-.2s.5-.2.7-.2c.1 0 .1 0 .1-.1 1.8-.5 3.9-.9 6.2-.9 2.3 0 4.5.3 6.2.9.1 0 .1 0 .2.1.2.1.5.2.7.2.2.1.3.1.5.2.1 0 .2.1.3.1h.1c0-.2.1-.3.1-.5 0-1.2-1.1-2.3-2.9-3.1l-.9-.3c-.1 0-.2-.1-.3-.1-.3-.1-.6-.2-1-.2-.1 0-.2 0-.3-.1-.4-.1-.7-.1-1.1-.2h-.2c-.4 0-.8-.1-1.3-.1-.4 0-.8 0-1.2.1h-.2c-.4 0-.7.1-1.1.1h-.2c-.4.1-.7.2-1.1.3h-.1c-.4.1-.7.2-1.1.4-.6.3-1 .5-1.4.8zm10.3-.1c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-2-.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-2-.2c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.3-.5-.5.2-.5.5-.5zm-2 .2c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-2 .5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"></path><path d="m32.6 22.7-.2-.1c-1.7-.9-4.1-1.5-6.8-1.6h-2.4c-2.7.1-5.1.7-6.8 1.6l-.2.1c-1.2.7-1.9 1.5-1.9 2.3 0 .4.2.7.5 1.1l2.1 1.2c.4.2.9.3 1.4.1.1-.1.2-.1.3-.2.1-.1.3-.2.4-.3.1 0 .1 0 .2-.1s.2-.1.3-.1c.1 0 .1 0 .2-.1.1 0 .2-.1.3-.1h.7c.2 0 .5 0 .7.1h.1c.2.1.5.2.7.3l.9.5c.1.1.2.1.4.1h.1c.4.1.7 0 1.1-.2l1.2-.7c1-.6 2.2-.6 3.2 0l1.2.7c.4.3 1 .3 1.4 0h.1l2.3-1.4c.3-.4.5-.8.5-1.1-.1-.6-.8-1.4-2-2.1zm-14.1 1.8c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm2-.5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm2-.2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm2-.3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm2 .3c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm2 .2c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm2 .5c-.3 0-.5-.2-.5-.5s.2-.5.5-.5.5.2.5.5-.2.5-.5.5zm-10.9-7.7c1-.4 2.2-.6 3.5-.7h1.4c.4 0 .9 0 1.3.1h.2c1.4.1 2.7.4 3.7.8.2-.3.3-.6.3-.9 0-1.6-2.5-3-5.5-3-2.8 0-5.3 1.3-5.5 2.8l.6.9zm6.9-2.3c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-2-.5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5zm-2 .5c.3 0 .5.2.5.5s-.2.5-.5.5-.5-.2-.5-.5.2-.5.5-.5z"></path></svg>
+            </a>
+            <ul id="mainnav">
+                <li id="home">
+                    <a href="#">
+                        Home <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                 <li>
+                     <a href="about.html"> About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#" title="Shopping">Shop
+                         <i class="fa-solid fa-cart-shopping"></i> 
+                    </a>
+                </li>
+                <li class="drop">
+                    <a href="#">menu</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="vanillacupcakes">Vanilla Cupcakes</a></li>
+                        <li><a href="redvelvetcupcakes">Red Velvet Cupcakes</a></li>
+                        <li><a href="chocolatecupcakes"> Chocolate Cupackes</a></li>
+                        <li><a href="confetticupcakes"> Confetti Cupcakes</a></li>
+                        <li><a href="cookiesandcreamcupcakes">Cookies and Cream Cupcakes</a></li>
+                        <li><a href="nutellacupcakes">Nutella Cupcakes</a></li>
+                    </ul>
+                </li>
+                </li>
+            </ul>
+        </nav>
+        
+     <section>
+        <h1 id="about">About</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora omnis officia ratione eos nulla harum est deleniti ad et, error totam illum incidunt provident maxime nam ipsa iure quae debitis!
+        </p>
+        </section>
+
+        <section>
+        <h1 id="contact">Contact</h1>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus similique, minima eum rerum maxime reprehenderit error iste enim dolore labore, animi illum veniam cum non illo minus. Aperiam, deleniti voluptatum.
+        </p>
+        </section>
+
+        <section>
+            <div>
+        <h1>Vanilla Cupcakes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut quo ex assumenda quasi quis animi voluptatibus necessitatibus. Architecto nihil eius alias aliquam repudiandae ullam id incidunt qui consequuntur sed.
+        </p>
+
+        <img
+        src="images/pexels-taryn-elliott-4099127.jpg" alt="Delicious VanillaCupcake.">
+        <p>
+            Photo by
+            <a href="https://www.pexels.com/search/vanilla%20cupcake/" target="blank"></a>
+                Taryn Elliot
+                                on
+<a href="https://www.pexels.com" target="blank">
+            </a>
+        </p>
+        </div>
+        </section>
+        
+
+        <section>
+        <div>
+        <h1>Red Velvet Cupcakes</h1>
+        <div>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore quisquam a quod debitis eligendi exercitationem error laborum, itaque deleniti est saepe fugit, maiores inventore sint, amet illum accusantium provident reiciendis.
+        </p>
+
+        <img
+        src="images/luisana-zerpa-MJPr6nOdppw-unsplash.jpg" alt="RedVelvet">
+        <p>
+            Photo by
+            <a href="https://www.pexels.com/search/red%20velvet%20cupcakes/" target="blank"></a>
+            Luisana Zerpa
+            on
+            <a href="https://www.pexels.com/search/vanilla%20cupcake/">
+                Pexels
+            </a>
+        </p>
+    </div>
+    </section>
+
+        <section>
+            <div>
+            <h1>Chocolate Cupcakes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere enim magnam tempore iusto asperiores quam, dolorem, assumenda voluptas hic quos iste ut dignissimos quibusdam expedita maiores cupiditate impedit veritatis tempora!
+        </p>
+
+        <img
+        src="images/pexels-juhi-sharma-1026123.jpg" alt="Chocolatecupcakes">
+        <p>
+            Photo by
+            <a href="https://www.pexels.com/search/chocolate%20cupcake/"target=blank></a>
+            Juhi Sharma
+            on
+            <a href="https://www.pexels.com/search/chocolate%20cupcake/"target=blank></a>
+            Pexels
+        </p>
+        </div>
+        </section>
+
+        <section>
+            <div>
+        <h1>Confetti Cupcakes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident libero delectus animi quasi ducimus esse quisquam ipsam vel, corporis consequuntur dignissimos. Quasi quidem doloremque explicabo, ipsa illo odit sed nam!
+        </p>
+        </div>
+        </section>
+
+        <section>
+            <div>
+        <h1>Cookies and Cream Cupackes</h1>
+        <hr>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cum ducimus dolorum necessitatibus obcaecati reiciendis quis soluta, maxime, tempore minima consequuntur voluptatum reprehenderit aut molestias ullam hic sunt tenetur. Quae.
+        </p>
+        
+        <img
+        src="images/pexels-shvets-production-7525144.jpg" alt="Cookiesandcreamcupcakes">
+        <p>
+            Photo by
+            <a href="https://www.pexels.com/search/cookies%20and%20cream%20cupcakes/"target=blank></a>
+            Shvets production
+            on
+            <a href="https://www.pexels.com"target=blank></a>
+            Pexles
+        </p>
+        </div>
+        </section>
+
+        <section>
+            <div>
+        <h1>Nutella Cupcakes</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ipsam dolores corporis quaerat dolor fugiat nisi officiis expedita necessitatibus qui illum natus quasi sunt, praesentium eos consequatur, esse doloribus nulla.
+        </p>
+        </div>
+        </section>
+     </header>
+     </body>
+</html>

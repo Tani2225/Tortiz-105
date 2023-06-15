@@ -12,8 +12,11 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#logo a {
-    width: 2rem;
+#logo  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
 }
 
 header {
@@ -26,15 +29,7 @@ header nav {
     padding: .50rem 0;
     width: 75vw;
     margin: 0 auto;
-}
-
-header nav #logo {
-    display:inline;
-    align-items:center;
-    color:black;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 3s;
+    justify-content: space-between;
 }
 
 header nav #logo svg {
@@ -54,13 +49,14 @@ header nav #logo:hover svg {
 }
 
 header #mainnav {
-    display:contents;
+    display:flex;
     list-style-type: none;
     align-items: center;
+    justify-content:center;
 }
 
 header #mainnav li {
-    margin-right: 0;
+    margin-right: .5rem;
 }
 
 header #mainnav li:last-of-type {
@@ -100,20 +96,27 @@ header #mainnav .drop {
     margin-left: auto;
     padding: .50rem 0;
 }
+a .fa-solid {
+    margin-left: .2rem;
+} 
 
 .dropdown_menu {
     margin-left: auto;
     padding: .50rem 0;
 }
+.drop {
+    position: relative;
+}
 .drop ul {
-    position: fixed;
-    z-index: -1s;
+    position:absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     list-style-type: none;
     background-color: lightseagreen;
     padding: .5rem 1.25rem;
     visibility: hidden;
+    opacity: 0;
     transition:
     top .5s,
     opacity .5s,
@@ -121,9 +124,10 @@ header #mainnav .drop {
 }
 
 .drop:hover ul {
-    top: calc (100% + .50rem);
-    opacity: 2;
-    visibility: visiblie;
+    top: 25px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
 }
 
 .drop ul li {
@@ -134,6 +138,13 @@ header #mainnav .drop {
     margin-right: 0;
 }
 
+@media screen and (max-width:768px) {
+    nav,header #mainnav {
+        flex-flow:column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 .drop_container a {
     margin-right: 0;
 }
@@ -141,4 +152,24 @@ header #mainnav .drop {
     color: black;
     text-decoration: none;
     transition: all .5s;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85vw;
+    height:100vh;
+    margin: 0 auto;
+}
+
+img {
+    width: 50%;
+    max-width: 500px;
+    border: 1px solid blue;
+    margin-left: 5rem;
+}
+
+h1 p {
+    max-width: 500px;
 }

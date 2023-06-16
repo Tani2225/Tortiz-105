@@ -1,0 +1,48 @@
+#table, #table caption, #table th, 
+#table td {
+        border-collapse: collapse;
+        padding: 12px;
+
+}
+#table {
+    margin-bottom: 48px;
+    box-shadow: 5px 5px 2px rgb(232, 239, 237);
+}
+#colspan {
+    background-color:white;
+}
+#tablerow {
+    background-color:white;
+}
+#rows {
+    background-color:lightgray;
+}
+#rows, #table tbody tr:nth-child(2) {
+        background-color:lightgray;
+        color:seagreen;
+}
+#table thead {
+    background-color: seagreen;
+    color: white;
+}
+table thead tr th:first-child {
+    border-radius: 1em 0 0 0;
+}
+table thead tr th:last-child {
+    border-radius: 0 1em  0 0;
+}
+#table {
+    border-collapse: collapse;
+    border-bottom: 0 25px;
+    
+}
+table td {
+    padding: 4px 0;
+}
+#table tr:nth-child(even) {
+    background-color: grey;
+    color: seagreen;
+}
+#table tr:hover {
+    background-color: seagreen;
+}

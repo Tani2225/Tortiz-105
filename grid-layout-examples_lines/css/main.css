@@ -1,22 +1,23 @@
 .myGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax (50px, auto);
+    grid-template-areas:
+    "myHeader myHeader myHeader"
+    "sidenav content content";
 }
 header {
-    background-color: darkcyan;
+    grid-area: myHeader;
+    background-color: mediumslateblue;
     padding: 36px;
-    grid-column: 1 / 4;
-    grid-row: 1;
+
 }
-nav {
-    background-color: grey;
+nav{
+    grid-area: sidenav;
+    background-color: lightskyblue;
     padding: 36px;
-    grid-column: 1;
-    grid-row: 2;
 }
 main{
+    grid-area: content;
     padding: 36px;
-    grid-column: 2/4;
-    grid-row: 2;
 }

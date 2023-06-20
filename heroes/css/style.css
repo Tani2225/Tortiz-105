@@ -23,7 +23,8 @@ body {
 
 #hero_2 {
     margin-bottom: 1000px;
-    background-image: url("../images/pexels-lukas-hartmann-1462011.jpg");
+    background-image: 
+    url("../images/pexels-lukas-hartmann-1462011.jpg");
     background-size: cover;
     background-position: center center ;
     height: 80vh;
@@ -41,7 +42,27 @@ body {
 #hero_2 h3 {
     font-family: cursive;
     font-size: 48px;
-    text-shadow: 2px 2px 2px  white;
+    text-shadow: 2px 2px 2px pink;
 }
 
-#
+#hero_3 {
+    margin-bottom: 1000px;
+    background-image:
+     url("../images/pexels-aron-visuals-1743165.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#hero_3 h2 {
+    font-family: cursive;
+    font-size: 60px;
+    padding-top: 60px;
+}
+
+#hero_3 h3 {
+    font-family: cursive;
+    font-size: 48px;
+    padding-bottom: 60px;
+}

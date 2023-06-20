@@ -1,6 +1,5 @@
 /* Google Font API imports - found at https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300&family=Secular+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@700&family=Ubuntu&display=swap');
 /*****************************************************************************
   Heading, Link, and Misc. Styles
 *****************************************************************************/
@@ -16,12 +15,12 @@ h1,
 h2,
 h3,
 a {
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h4,
 p {
-    font-family: 'Assistant', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
 }
 
 h1 {
@@ -41,12 +40,26 @@ a {
 nav,
 nav a,
 footer a {
-    color: indigo;
+    color: rgb(8, 31, 167);
 }
 
 nav a:hover,
 footer a:hover {
     text-decoration: underline;
+}
+
+#fa-brands #fa-twitter{
+ background-color: rgb(41, 149, 207);
+}
+ #fa-brands #fa-facebook {
+    background-color: rgb(30, 11, 150);
+}
+#fa-brands #fa-instagrams {
+    background-color: rgb(113, 11, 150);
+}
+#fa-brands #fa-github {
+    background-color: rgb(31, 4, 47);
+
 }
 
 /****************************************************************************
@@ -60,13 +73,13 @@ footer a:hover {
     "nav_area nav_area nav_area"
     "hero_area hero_area hero_area"
     ". three_cards_area ."
-    ". carousel_area ."
+    ".carousel_area ."
     ". gallery_area ."
     ". two_cards_area ."
     "footer_area footer_area footer_area";
 }
-section {
-    border: 4px solid #3D93AD;
+section {   
+ border: 4px solid indigo;
 }
 nav {
     grid-area: nav_area;
@@ -89,7 +102,6 @@ nav {
 footer {
     grid-area: footer_area;
 }
-
 /****************************************************************************
   Nav/Footer styles
 ****************************************************************************/
@@ -131,7 +143,7 @@ nav .social_media {
 nav,
 nav a,
 footer a {
-    color: #FD997E;
+    color: indigo;
 }
 
 nav a:hover,
@@ -149,16 +161,70 @@ nav h2 {
 footer ul {
     padding: 0;
 }
-
-
 /****************************************************************************
   Hero styles
 ****************************************************************************/
 
+#hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../images/abstractBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#hero h1,
+#hero h4 {
+    color: white;
+}
+/****************************************************************************
+  Button styles
+****************************************************************************/
+
+#hero a {
+    background-color: white;
+    color: indigo;
+    border: 2px solid indigo;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 12px;
+    min-width: 150px;
+    transition: transform 0.25s;
+}
+
+#hero a:hover {
+    transform: scale (1.1)
+}
 /****************************************************************************
   Card styles
 ****************************************************************************/
+#three_cards,
+#two_cards {
+    display:flex;
+}
 
+.card {
+    border: 2px solid indigo;
+    color: indigo;
+    margin: 48px 24px 24px;
+    padding: 12px 12px 24px;
+    text-align: center;
+    box-shadow: 4px 4px 8px 0px grey;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    font-size: 18px;
+    flex: 1;
+    margin-top: 0px;
+}
 /****************************************************************************
   Gallery styles
 ****************************************************************************/
@@ -167,18 +233,26 @@ footer ul {
   Media Query - Mobile Breakpoint
 ****************************************************************************/
 @media screen and (max-width: 800px) {
-    #site_grid {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav_area"
-        "hero_area"
-        "three_cards_area"
-        "carousel_area"
-        "gallery_area"
-        "two_cards_area"
-        "footer_area";
-    }
-    nav {
-        flex-direction: column;
-    }
+#site_grid{
+grid-template-columns: 1fr;
+grid-template-areas:
+"nav_area"
+"hero_area"
+"three_cards_area"
+"carousel_area"
+"gallery_area"
+"two_cards_area"
+"footer_area";
+} 
+nav {
+    flex-direction: column;
+}
+#three_cards,
+#two_cards {
+    flex-direction: column;
+}
+.card {
+    align-items: center;
+    margin: 36px 24px 0px;
+}
 }

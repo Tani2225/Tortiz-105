@@ -222,6 +222,7 @@ footer ul {
     flex: 1;
     margin-top: 0px;
 }
+
 /****************************************************************************
   Gallery styles
 ****************************************************************************/
@@ -283,6 +284,18 @@ footer ul {
 #gallery_5 img {
     width: 100%;
     margin-bottom: 24px;
+}
+
+#gallery_6 {
+    display: flex;
+    flex-direction: columns;
+    flex-wrap: wrap;
+    max-height: 1110px;
+}
+
+#gallery_6 img {
+    width: 30%;
+    margin: 12px;
 }
 /****************************************************************************
   Media Query - Mobile Breakpoint

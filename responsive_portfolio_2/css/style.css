@@ -224,6 +224,36 @@ footer ul {
 }
 
 /****************************************************************************
+  Carousel Container
+****************************************************************************/
+ #carousel_container {
+    width: 100%;
+    max-height: 300px;
+ }
+ 
+#carousel_inner img {
+width: 25%;
+max-height: 200px;
+margin: 12px;
+width: auto;
+}
+
+#carousel_item img {
+    width: 50%;
+    max-height: 200px;
+    margin: 12px;
+    width: auto 0;
+}
+
+
+#carousel_item img {
+    width: 25%;
+    max-height: 200px;
+    margin: 12px;
+    width: auto 0;
+}
+
+/****************************************************************************
   Gallery styles
 ****************************************************************************/
 

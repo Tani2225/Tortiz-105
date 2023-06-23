@@ -154,16 +154,16 @@ footer ul {
 ****************************************************************************/
 
 #hero {
-    height: 70vh;
+    height: vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/foxtail_logos-1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment:local;
+    background-color:  rgb(229, 146, 90); 
 }
 
+#hero img {
+    width: 200px;
+}
 #hero h1, 
 #hero h4 {
  color: black;

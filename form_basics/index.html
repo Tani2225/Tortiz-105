@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, 
+        intial-scale=1.0">
+        <title>Form Inputs- Basic Exercise</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <p>What is your name?</p>
+
+                <div class="text_input">
+                    <label for="first_name_id">First Name</label>
+                    <input
+                    required
+                    id="first_name_id"
+                    name="first_name"
+                    type="text"
+                    minlength="2"
+                    maxlength="15">
+                </div>
+                <div class="text_input">
+                    <label for="middle_initial_id">Middle Initial</label>
+                    <input type="text" id="middle_initial_id" name="middle_initial">
+                </div>
+                <div class="text_input">
+                    <label for="last_name_id">Last Name</label>
+                    <input type="text" id="last_name_id" name="last_name">
+                </div>
+            </fieldset>
+            <fieldset>
+                <p>What program are you in?</p>
+                <div>
+                    <input type="radio" id="rasp_radio" name="program" value="rasp" required>
+                    <label for="rasp_radio">Recording Arts and Show Production/label>
+                </div>
+                <div>
+                    <input type="radio" id="dfvp_radio" name="program" value="dfvp" required>
+                    <label for="dfvp_radio">Digital Filmmaking and Video Production</label>
+                </div>
+                <div>
+                    <input type="radio" id="gdwd_radio" name="program" value="gdwd" required>
+                    <label for="gdwd_radio">Graphic Design and Web Development</label>
+                </div>
+
+                <div>
+                    <label for="program_id">
+                        <select id="program_id" name="program_group"></select>
+                        <option value=""disabled selected>Please choose</option>
+                        <option value="recording">Recording Arts and Show Program</option>
+                        <option value="filmming">Digital Filmmaking and Video Production</option>
+                        <option value="design">Graphic Design and Web Development</option>
+
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset id="buttons">
+                    <div>
+                        <input type="submit" value="Click to Submit">
+                    </div>
+            </fieldset>
+            </form>
+</body>
+</html>

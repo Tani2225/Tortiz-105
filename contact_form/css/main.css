@@ -13,6 +13,7 @@ body {
 
 header {
     grid-area: header;
+    text-align: center;
 }
 
 main {
@@ -23,51 +24,29 @@ main {
 }
 
 header h1 {
-    padding-left: 50px;
-    margin-left: 25px 0 ;
+    margin-bottom: 25px;
     font-size: 30px;
 }
 header p {
-  padding: 20px;
-  margin: 0;
   font-size: 15px;
+  margin-bottom: 50px;
 }
 
-#services_id {
+input, select, textarea {
     border: 2px solid black;
-    padding: 13px;
-    margin: 20px;
+    padding: 13px 6px 13px 0;
+    margin: 20px auto;
     font-size: 12px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-#name_id {
-    border: 2px solid black;
-    padding: 12px;
-    margin: 20px;
-    font-size: 12px;
-}
-
-#email_id {
-    border: 2px solid black;
-    padding: 12px;
-    margin: 20px;
-    font-size: 12px;
-
-}
 
 #message_id {
-    border: 2px solid black;
-    padding: 50px;
-    font-size: 12px;
+    padding-bottom: 50px;
 }
 
-#select {
-    padding: 25px;
-    border: none;
-    font-size: 15px;
-    font-family: sans-serif;
-    color: black;
-}
 input[type=submit] {
     padding: 12px;
     background-color: lightblue;

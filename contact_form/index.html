@@ -40,7 +40,9 @@
                              type="text" 
                              id="name_id" 
                              required 
-                             placeholder="E.g John Smith">
+                             placeholder="E.g John Smith"
+                             minlength="2"
+                             maxlength="15">
                    </div>
                     <div>
                          <label for="email_id">Email</label>
@@ -49,17 +51,23 @@
                              id="email_id"
                              name="email"
                              required
-                             placeholder="Eg. jane.doe@gmail.com">
+                             placeholder="Eg. jane.doe@gmail.com"
+                             minlength="4"
+                             maxlength="20">
                     <div>
                         <label for="message_id">Message</label>
                         <textarea
                              id="message_id"
                              name="message"
-                             placeholder="I would like you to...">
+                             placeholder="I would like you to..."
+                             minlength="8"
+                             maxlength="25">
                             </textarea>
                     </div>
                     <div>
-                        <input type="submit" value="Send">
+                        <input type="submit" value="Send"
+                        minlength="2"
+                        maxlength="20">
                     </div>
                 </form>
             </main>

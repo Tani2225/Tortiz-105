@@ -41,8 +41,16 @@ input, select, textarea {
     width: 100%;
     box-sizing: border-box;
 }
+#name_id:not(:focus):invalid {
+    background-color: rgb(164, 242, 240);
+    border-bottom: 4px solid rgb(181, 55, 220);
+    }
 
-
+ #email_id:not(:focus):invalid {
+  background-color: rgb(216, 173, 140);
+  border-bottom: 4px solid rgb(127, 100, 196);
+  }
+  
 #message_id {
     padding-bottom: 50px;
 }

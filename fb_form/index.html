@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, 
+        intial-scale=1.0">
+        <link href="css/main.css" rel="stylesheet">
+        <title>Facebook Form Signup</title>
+    </head>
+    <body>
+        <div id="grid">
+             <header>
+                 <img src="images/fb_logo.svg" alt="facebook">
+             </header>
+             <main>
+                <form action="https://getform.io/f/55ec4d06-f788-4161-aa3e-f2b355427856" method="POST">
+                    <div>
+                        <h1>Create a new account</h1>
+                        <h3>It's quick and easy.</h3>
+                        <hr>
+                    </div> 
+                    <div id="name">
+                        <div>
+                            <label for="first_name_id"></label>
+                            <input
+                                 type="text"
+                                id="first_name_id"
+                                 required
+                                placeholder="First Name">
+                       </div>
+                       <div>
+                            <label for="last_name_id"></label>
+                            <input
+                                type="text"
+                                id="last_name_id"
+                                required
+                                placeholder="Last Name"
+                                minlength="2"
+                                maxlength="15">
+                       </div>
+                    </div>
+                    <div>
+                        <label for="mobilenumber_email_id"></label>
+                        <input
+                            type="text"
+                            id="mobilenumber_email_id"
+                            required
+                            placeholder="mobilenumber_or_email"
+                            minlength="2"
+                            maxlength="20">
+                   </div>
+                    <div>
+                        <label for="password_id"></label>
+                        <input 
+                            type="text"
+                            id="passowrd_id"
+                            required
+                            placeholder=" new password">
+                    </div>
+                    <div id="birthday">
+                        <div>
+                            <h2>Birthday</h2>
+                            <label for="month_id"></label>
+                            <select id="month_id"
+                            name="month_id">
+                                <option id="month_id" value="august"
+                                >August</option>
+                                <option value="august">Month</option>
+                            </select>         
+                        </div>
+                        <div>
+                            <label for="date_id"></label>
+                            <select id="date_id"
+                            name="date_id">
+                                 <option id="date_id" value="eleven"
+                                >11</option>
+                                 <option value="eleven"></option>
+                          </select>
+                        </div>        
+                        <div>
+                            <label for="year_id"></label>
+                            <select id="year_id"
+                            name="year_id">
+                                <option id="year_id" value="twentytwo"
+                                >2022</option>
+                                <option value="twentytwo"></option>
+                           </select>
+                    </div>
+                    <div id="gender">
+                        <h2>Gender</h2>
+                        <div>
+                            <input type="radio" id="rasp_radio" name="gender" required>
+                            <label for="gender_female_id">Female</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rasp_radio" name="gender" required>
+                            <label for="gender_male_id">Male</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rasp_radio" name="gender" required>
+                            <label for="gender_custom_id">Custom</label>
+                        </div>
+                    </div>
+                    <div>
+                        <p>
+                           People who use our service may have uploaded your contact information to
+                           Facebook. <a href="learnmore">Learn More</a> 
+                        </p>
+                        <p>
+                            By clicking Sign Up, you agree to our Terms,Privacy Policy and Cookies
+                            Policy. You may receive SMS Notifications from us and can opt out any time.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="submit" value="Signup"
+                             minlength="2"
+                             maxlength="15">
+                    </div>
+                    <div>
+                        <a href="alreadyhaveanaccount">Already have an account?</a>
+                    </div>
+                </form>
+            </main>
+    </body>
+</html>

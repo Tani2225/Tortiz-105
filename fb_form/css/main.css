@@ -1,12 +1,11 @@
- * {
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: lightgray;
-    font-family: sans-serif;
+    background-color: #e1e1e1;
 }
 
 header img {
@@ -16,119 +15,133 @@ header img {
 }
 
 main {
-    width: 600px;
+    max-width: 600px;
+    width: 70%;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px  10px grey;
+    box-shadow: 0px 0px 15px #9e9e9e;
     font-family: sans-serif;
 }
 
-main div {
+main .intro{
     padding: 10px 0;
 }
-
 main div h1, main div p {
     text-align: center;
 }
-
 main div p {
     margin: 5px 0;
-    color: grey;
+    color: #606060;
 }
-
 hr {
     border: 0;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #a7a7a7;
     margin-bottom: 15px;
 }
 
 form {
-padding: 0 15px;
+    padding: 0 15px;
 }
-
 form fieldset {
     border: none;
 }
 
-#mae-inputs {
+form label:not(#radio-inputs label) {
+    display: none;
+}
+
+fieldset div {
+    flex: 1;
+    margin: 15px 0;
+}
+fieldset div div {
+    margin: 0;
+}
+
+#txt-inputs input {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+    font-size: 1rem;
+}
+div input::placeholder {
+    color: #a7a7a7;
+}
+div input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+    background-color: rgba(255, 0, 0, .1);
+}
+
+#name-inputs {
     display: flex;
     justify-content: space-between;
     column-gap: 10px;
 }
 
-#name-inputs div {
+fieldset legend {
+    color: #5c5c5c;
+}
+
+#birthday-select {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+select {
     flex: 1;
-}
-
-#name-inputs div input {
-    width: 100%;
     padding: 10px 0 10px 10px;
-    font-weight: 
-}
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 500px 1fr;
-    grid-template-areas:
-    ". header ."
-    ". form .";
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+    font-size: 1rem;
 }
 
-header {
-    grid-area:header;
-    text-align: center;
-    margin: 0px auto;
-    width: 50%;
+#gender-inputs {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-top: 10px;
+}
+#gender-inputs div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #a7a7a7;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-main {
-    grid-area: form;
-    background-color: white;
-    border: 2px solid black;
-    padding: 100px;
+form .txt p {
+    text-align: left;
+    line-height: 1.5rem;
+}
+form .txt p:last-of-type {
+    margin: 15px 0 20px 0;
+}
+form .txt p a {
+    text-decoration: none;
+    color: rgb(0, 76, 255);
 }
 
-main h1 {
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-main h3 {
-    font-size: 15px;
-    color: grey;
-    text-align: center;
-    margin: 0 px auto;
-}
-
-main h2 {
-    font-size: 12px;
-    color:grey;
-}
-
-input, select, textarea {
-    border: 2px solid lightgrey;
-    padding: 2px ;
-    margin: 0px auto;
-    font-size: 12px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    padding: 12px;
-    background-color: green;
-    font-size: 20px;
-    font-family: sans-serif;
+form input[type=submit] {
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    background-color: #00ca00;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-size: 1.5rem;
     color: white;
+    border: none;
+    width: 40%;
 }
-
-input[type=submit] {
-    opacity: 0.5s;
+form #login {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    text-decoration: none;
+    color: rgb(0, 76, 255);
 }
-
-input[type=submit]:active {
-    background-color:  white;
-}
-

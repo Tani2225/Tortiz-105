@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family:'Playfair Display', sans-serif;
+    font-size: 300;
+}
+  header h1 , h6 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 20px;
+ }
+
+ hr {
+color: 8px solid blue
+}
+
+nav h6 {
+  background-color: paleturquoise;
+}
+
+header nav {
+    padding: 0 30px 25px 30px;
+    border-bottom: 2px solid black
+}
+
+header nav a{
+    margin-top: 15px ;
+    padding: 0 autp;
+ }
+
+ header nav a:last-of-type {
+    margin-left: 0;
+ }
+ header nav a::backdrop {
+    color: burlywood;
+ }
+
+ ol {
+    background-color: powderblue;
+    width: 400%;
+    height:4 100%;
+    object-fit: cover;
+ }
+
+ h2 {
+    font-size: 20px;
+    padding: 0;
+    margin: 0 auto;
+ }
+ #carousel_container {
+    grid-area: carousel_area;
+    margin: 25px auto;
+  }
+  .carousel-item {
+     height: 400px;
+  }
+ .carousel-item img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+#projects_exercise {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#project_exercise img {
+    width: 100%;
+}

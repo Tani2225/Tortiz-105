@@ -6,30 +6,29 @@
 }
 
 body {
-    font-family:'Playfair Display', sans-serif;
-    font-size: 300;
+    background-color: lightgreen;
 }
   header h1 , h6 {
     font-family: 'Playfair Display', sans-serif;
     font-size: 20px;
  }
 
- hr {
-color: 8px solid blue
+ header hr {
+border-bottom: 4px solid blue;
 }
 
 nav h6 {
-  background-color: paleturquoise;
+  background-color: rgb(2, 47, 47);
 }
 
 header nav {
     padding: 0 30px 25px 30px;
-    border-bottom: 2px solid black
+    border-bottom: 2px solid black;
 }
 
 header nav a{
     margin-top: 15px ;
-    padding: 0 autp;
+    padding: 0 aut0;
  }
 
  header nav a:last-of-type {
@@ -64,6 +63,12 @@ header nav a{
      object-fit: cover;
  }
 
+  section .project_container {
+    background-color: aqua;
+ }
+#project_container h2 {
+    text-align: center;
+}
 #projects_exercise {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

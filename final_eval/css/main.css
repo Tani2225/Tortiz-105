@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+}
+
+#hero {
+    background-image: url(../images/mediaAssets/backgroundLarge.jpg);
+    background-size: cover;
+}
+
+#hero a {
+    padding-right: 20p auto;
+}
+nav {
+    padding: 24px 36px 36px 24px;
+}
+
+nav img {
+ width: 150px;
+}
+
+nav ul {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ list-style-type: none;
+}
+
+nav a {
+    display:inline-block;
+    color:white;
+    text-decoration:underline;
+    border-radius: 10px;
+    background-color: rgb(28, 137, 184) ;
+    padding: 6px;
+    margin-right: 12px auto;;
+    transition: background-color 0.5s;
+}
+
+.disneybundle img {
+    align-items: center;
+}
+nav a:hover {
+    background-color: rgb(9, 90, 131);
+}
+
+#hero_content p {
+color: white;
+font-size: 20px;
+text-align: center;
+margin-bottom: 25px;
+}
+
+#hero_content img {
+margin: 30px 0;
+}
+
+#hero_content_2 p,a {
+text-align: center;
+color:white;
+}
+
+#hero_content[input]:active {
+ text-align:center;
+}
+#cards_section h5  {
+color: white;
+text-align: left;
+font-size: 24px;
+}
+
+#cards_section h2  {
+    color: white;
+    text-align: center;
+}
+
+#cards_section h4 {
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+}
+ #cards_container {
+    font-size: 24px;
+
+ }
+
+ 
+#footer_image_container img {
+    width: 200px;
+    background: linear-gradient(to bottom #ece7e7,#faf8f8);
+    padding: 24px 36px;
+    justify-content: center;
+}
+#footer_links {
+    text-align: center;
+    justify-content: space-between;
+
+}
+#footer_links_more {
+    text-align: center;
+    padding: 6px;
+    margin-bottom: 12px auto;
+}
+#content h5 {
+    text-align: center;
+    padding: 24px;
+}
+#copyright i {
+    color: white;
+}
+#copyright {
+    color: white;
+    text-align: center;
+} 
+@media screen and (max-width: 480px) {
+     #hero img{
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 24px;
+        row-gap: 24px;
+    }
+    #cards_section {
+    padding: 0 25px;}
+    
+
+    #cards_container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    #cards_container div {
+        background-repeat: no-repeat;
+    }    
+    #cards_container h5 {
+        font-weight: normal;
+    }
+}
